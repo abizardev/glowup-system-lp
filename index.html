@@ -6,79 +6,46 @@
   <title>Plan Your Life – Page 63</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Barlow:wght@400;500;600;700;800;900&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="preload" href="hero-bg-desktop.webp" as="image" media="(min-width: 769px)">
-  <link rel="preload" href="hero-bg-mobile.webp" as="image" media="(max-width: 768px)">
+  <link rel="preload" href="hero-mockup.webp" as="image">
   <script src="https://cdn.jsdelivr.net/npm/dodopayments-checkout@latest/dist/index.js"></script>
-  <style>
-    @media (max-width: 768px) {
-      .hero-text-group {
-        margin-top: 64px !important;
-      }
-      .hero-title {
-        font-size: 52px !important;
-        line-height: 1.05 !important;
-        font-weight: 900 !important;
-        margin-bottom: 8px !important;
-      }
-      .hero-desc {
-        font-size: 16px !important;
-        line-height: 1.55 !important;
-      }
-    }
-  </style>
 </head>
 <body>
 
-  <!-- S1 — HERO -->
-  <div class="page-wrapper">
+  <!-- S1 — HERO (sesuai referensi headline hasil.png) -->
+  <div class="page-wrapper hero-new">
     <div class="page-content">
-      <header class="header">
-        <div class="nav-tab nav-left">
-          <a href="#" class="contact-btn">
-            Explore
-            <span class="phone-circle">
-              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
-            </span>
-          </a>
-        </div>
-        <div class="nav-tab nav-center">
-          <a href="#" class="logo">Plan Your Life.</a>
-        </div>
-        <div class="nav-tab nav-right">
-          <a href="#" class="contact-btn">
-            Shop Now
-            <span class="phone-circle">
-              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
-            </span>
-          </a>
-        </div>
+      <header class="header hero-header">
+        <a href="#" class="logo">Plan Your Life.</a>
+        <nav class="hero-nav">
+          <a href="#" class="active">Home</a>
+          <a href="#s2">Features</a>
+          <a href="#s3">Reviews</a>
+          <a href="#s4">FAQ</a>
+        </nav>
+        <a href="#" class="btn-dark btn-nav">
+          Get The Planner
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+        </a>
       </header>
 
-      <main class="hero-container">
-        <section class="hero-left">
-          <div class="hero-text-group">
-            <h1 class="hero-title">Your Goal.<br>Your Plan.</h1>
-            <p class="hero-desc">Plan your workouts, track progress,<br>and build the best version of you.</p>
-          </div>
-          <div class="hero-cta-group">
-            <a href="#" class="btn-primary">
-              Get Your Planner
-              <span class="arrow-circle">
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
-              </span>
-            </a>
-            <div class="slider-dots">
-              <span class="dot active"></span><span class="dot"></span><span class="dot"></span>
-            </div>
-          </div>
-        </section>
+      <main class="hero-center">
+        <p class="hero-eyebrow">YOUR HEALTHY HABITS, BRIGHTER YOU</p>
+        <h1 class="hero-title">Small Habits.<br>Big Changes.</h1>
+        <p class="hero-desc">The Fitness Habit Tracker is designed to help you build healthy habits, stay consistent, and feel your best — one day at a time.</p>
+        <div class="hero-cta-group">
+          <button class="btn-dark btn-hero" type="button">
+            Get The Planner
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            <span class="btn-price">$27</span>
+          </button>
+        </div>
+        <div class="hero-mockup-wrap">
+          <img src="hero-mockup.webp" alt="90-Day Fitness Reset planner mockup — Daily Planner and Weekly Planner tablets" class="hero-mockup-img" fetchpriority="high">
+        </div>
       </main>
-
-      <div class="bottom-arrow-tab" onclick="document.getElementById('s2').scrollIntoView({behavior:'smooth'})">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"/><polyline points="19 12 12 19 5 12"/></svg>
-      </div>
     </div>
   </div>
 
@@ -268,13 +235,13 @@
   <script type="module">
     import { animate, inView, stagger } from "https://cdn.jsdelivr.net/npm/motion@11.11.13/+esm";
 
-    // S1
-    animate(".nav-tab",        { y:[-50,0], opacity:[0,1] }, { duration:.8, delay:stagger(.1), easing:"ease-out" });
-    animate(".bg-text",        { y:[100,0], opacity:[0,1] }, { duration:1.2, easing:[.22,1,.36,1] });
-    animate(".hero-title",     { y:[40,0],  opacity:[0,1] }, { duration:.8, delay:.2, easing:"ease-out" });
-    animate(".hero-desc",      { y:[40,0],  opacity:[0,1] }, { duration:.8, delay:.3, easing:"ease-out" });
-    animate(".hero-cta-group", { y:[40,0],  opacity:[0,1] }, { duration:.8, delay:.4, easing:"ease-out" });
-    animate(".bottom-arrow-tab",{ opacity:[0,1] }, { duration:1, delay:1 });
+    // S1 — hero baru (centered, sesuai headline hasil.png)
+    animate(".hero-header",     { y:[-30,0], opacity:[0,1] }, { duration:.7, easing:"ease-out" });
+    animate(".hero-eyebrow",    { y:[24,0],  opacity:[0,1] }, { duration:.6, delay:.1, easing:"ease-out" });
+    animate(".hero-title",      { y:[40,0],  opacity:[0,1] }, { duration:.8, delay:.2, easing:"ease-out" });
+    animate(".hero-desc",       { y:[40,0],  opacity:[0,1] }, { duration:.8, delay:.3, easing:"ease-out" });
+    animate(".hero-cta-group",  { y:[40,0],  opacity:[0,1] }, { duration:.8, delay:.4, easing:"ease-out" });
+    inView(".hero-mockup-wrap", i => animate(i.target, { opacity:[0,1], y:[60,0] }, { duration:.9, easing:[.22,1,.36,1] }));
 
     // S2
     inView(".s2-title",  i => animate(i.target, { opacity:[0,1], y:[30,0] }, { duration:.7, easing:"ease-out" }));
@@ -400,14 +367,6 @@
     inView(".method-heading", i => animate(i.target, { opacity:[0,1], y:[30,0] }, { duration:.7, easing:"ease-out" }));
     inView(".right-col",      i => animate(i.target, { opacity:[0,1], x:[36,0]  }, { duration:.7, easing:[.22,1,.36,1] }));
 
-    // Dots
-    document.querySelectorAll('.dot').forEach(d => {
-      d.addEventListener('click', () => {
-        document.querySelectorAll('.dot').forEach(x => x.classList.remove('active'));
-        d.classList.add('active');
-      });
-    });
-
     // Accordion
     document.querySelectorAll('.accordion-header').forEach(h => {
       h.addEventListener('click', () => {
@@ -462,7 +421,7 @@
 
     initInlineCheckout();
 
-    document.querySelectorAll('.btn-primary, .cta-btn').forEach(btn => {
+    document.querySelectorAll('.btn-primary, .cta-btn, .btn-hero, .btn-nav').forEach(btn => {
       btn.addEventListener('click', (e) => {
         e.preventDefault();
         const wrapper = document.getElementById('checkout-section-wrapper');
